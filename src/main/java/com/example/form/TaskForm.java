@@ -23,6 +23,6 @@ public class TaskForm {
     private String status;
 
     public Task.Status getStatusType() {
-        return Task.Status.getStatus(this.status);
+        return Task.Status.Companion.getStatus(this.status);
     }
 }
