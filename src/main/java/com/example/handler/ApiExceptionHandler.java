@@ -56,8 +56,7 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
     }
 
     private ErrorEntity createErrorEntity(Exception e, HttpStatus status) {
-        ErrorEntity errorEntity = new ErrorEntity();
-        errorEntity.setStatus(status);
+        ErrorEntity errorEntity = new ErrorEntity(status);
         return errorEntity;
     }
 
